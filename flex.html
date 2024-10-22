@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton School Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #1e3264;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.new-badge {
+    background-color: #f0c020;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+}
+
+.signup-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Newton School" />
+            <span>Newton School</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Data Science & AI</a>
+            <a href="#">B. Tech in CS & AI <span class="new-badge">NEW</span></a>
+            <a href="#">Newton Edge</a>
+            <a href="#">Refer & Earn</a>
+            <a href="#">More</a>
+        </nav>
+        <div class="cta">
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </header>
+</body>
+</html>
